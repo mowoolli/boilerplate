@@ -1,0 +1,54 @@
+.login, .contact {
+    margin: auto;
+    padding: 0rem 1rem 2rem 1rem;
+}
+
+.login input[type=text], .login input[type=password], .contact input[type=text], .contact textarea {
+    width: 100%;
+    padding: 1.2rem 2rem;
+    margin: 0rem auto 1rem auto;
+    display: inline-block;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+}
+
+.login input[type=submit], .contact input[type=submit] {
+    width: 100%;
+    background-color: $accent-color;
+    color: white;
+    padding: 1.4rem 2rem;
+    margin: auto;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.login input[type=submit]:focus, .contact input[type=submit]:focus {
+    background-color: black;
+    border-radius: 0.4rem;
+    padding: 1.4rem 2rem;
+    margin: auto;
+    border: none;
+}
+
+.login input:focus, .contact input:focus, .contact textarea:focus {
+    border: 0.2rem solid black;
+    border-radius: 0;
+}
+
+.login input[type=submit]:hover, .contact input[type=submit]:hover {
+    background-color: black;
+}
+
+.contact textarea[name=message] {
+    font-family: $font-family;
+    height: 10rem;
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    outline-width: 0;
+}

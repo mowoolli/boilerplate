@@ -1,0 +1,48 @@
+// Abstract containers
+.container {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.small-container {
+    @extend .container;
+    max-width: $small;
+}
+
+.medium-container {
+    @extend .container;
+    max-width: $medium;
+    //min-width: $small;
+}
+
+.large-container {
+    @extend .container;
+    max-width: $large;
+    //min-width: $medium;
+}
+
+.xlarge-container {
+    @extend .container;
+    max-width: $xlarge;
+    //min-width: $large;
+}
+
+.full-container {
+    max-width: $full;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// Banner class
+.banner {
+    width: $full;
+    text-align: center;
+    line-height: $banner-height;
+    font-size: $h6-font-size;
+    font-family: "Lucida Console", Monaco, "mono", monospace;
+    background-color: $banner-color;
+    margin: 0;
+    padding: 0;
+}

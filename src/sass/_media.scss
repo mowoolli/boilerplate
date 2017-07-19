@@ -1,0 +1,134 @@
+.map {
+    max-width: $large;
+    margin: auto;
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    border: 0;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+
+@media only screen and (max-width: $small) {
+    .map {height: 30rem},
+    #map {width: $full; padding: 0rem;}
+}
+@media only screen and (max-width: $large) and (min-width: $small +0.01px) {
+    .map {height: 40rem},
+    #map {width: 90%}
+}
+@media only screen and (min-width: $large +0.01px) {
+    .map {height: 50rem},
+    #map {width: 84rem}
+}
+
+
+// Cards
+.work-sample {
+    width: 35rem;
+    height: 100%;
+    display: inline-block;
+    margin: 2rem;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: $medium) {
+    .work-sample {width: 30rem; margin: 2rem 2rem 1rem 1rem}
+}
+
+.work-sample iframe {
+    border: 0;
+    width: 100%;
+    height: 30rem;
+}
+
+.work-sample object {
+    border: 0;
+    width: 100%;
+    height: 30rem;
+}
+
+.work-sample img {
+    border: 0;
+    width: 100%;
+    height: 30rem;
+    object-fit: scale-down;
+}
+
+.work-sample a {
+    text-decoration: none;
+}
+
+.work-sample:hover, {
+    box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+}
+
+.caption {
+    text-decoration: none;
+    padding: 0rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-work-sample {
+    
+}
+
+.full-work-sample iframe {
+    border: 0;
+    width: 100%;
+    height: 100rem;
+    margin-bottom: 2rem
+}
+
+@media only screen and (max-width: $medium)and (min-width: $small +0.01px) {
+    .full-work-sample {margin: 0rem 2rem 2rem 2rem}
+}
+
+@media only screen and (max-width: $small) {
+    .full-work-sample {margin: 0rem 2rem 2rem 2rem},
+    .full-work-sample iframe {height: 60rem;}
+}
+
+// Image grid
+.image-grid {
+    margin: 2rem auto 2rem auto;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-grid img {
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.gallery > img:hover {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+
+.gallery #left-column:hover {
+    margin-left: 10rem;
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}
+
+.gallery #right-column:hover {
+    margin-left: -10rem;
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+}

@@ -1,0 +1,411 @@
+// Clear the flow so elements adhere to column widths
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+// Float all columns to the left and make mobile first
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+.xl-only, .l-only, .m-only, .s-only, .l-up, .m-up {
+    display: none;
+}
+
+// Fixed columns in 10ths and 24ths
+.fixed-col-1-10 {width: 10%;}
+.fixed-col-2-10 {width: 20%;}
+.fixed-col-3-10 {width: 30%;}
+.fixed-col-4-10 {width: 40%;}
+.fixed-col-5-10 {width: 50%;}
+.fixed-col-6-10 {width: 60%;}
+.fixed-col-7-10 {width: 70%;}
+.fixed-col-8-10 {width: 80%;}
+.fixed-col-9-10 {width: 90%;}
+.fixed-col-10-10 {width: 100%;}
+
+.fixed-col-1-24 {width: 4.167%;}
+.fixed-col-2-24 {width: 8.333%;}
+.fixed-col-3-24 {width: 12.5%;}
+.fixed-col-4-24 {width: 16.667%;}
+.fixed-col-5-24 {width: 20.833%;}
+.fixed-col-6-24 {width: 25%;}
+.fixed-col-7-24 {width: 29.167%;}
+.fixed-col-8-24 {width: 33.333%;}
+.fixed-col-9-24 {width: 37.5%;}
+.fixed-col-10-24 {width: 41.667%;}
+.fixed-col-11-24 {width: 45.833%;}
+.fixed-col-12-24 {width: 50%;}
+.fixed-col-13-24 {width: 54.167%;}
+.fixed-col-14-24 {width: 58.333%;}
+.fixed-col-15-24 {width: 62.5%;}
+.fixed-col-16-24 {width: 66.667%;}
+.fixed-col-17-24 {width: 70.833%;}
+.fixed-col-18-24 {width: 75%;}
+.fixed-col-19-24 {width: 79.167%;}
+.fixed-col-20-24 {width: 83.333%;}
+.fixed-col-21-24 {width: 87.5%;}
+.fixed-col-22-24 {width: 91.667%;}
+.fixed-col-23-24 {width: 95.833%;}
+.fixed-col-24-24 {width: 100%;}
+
+// Fixed offsets in 10ths and 24hs
+.fixed-offset-1-10 {margin-left: 10%;}
+.fixed-offset-2-10 {margin-left: 20%;}
+.fixed-offset-3-10 {margin-left: 30%;}
+.fixed-offset-4-10 {margin-left: 40%;}
+.fixed-offset-5-10 {margin-left: 50%;}
+.fixed-offset-6-10 {margin-left: 60%;}
+.fixed-offset-7-10 {margin-left: 70%;}
+.fixed-offset-8-10 {margin-left: 80%;}
+.fixed-offset-9-10 {margin-left: 90%;}
+.fixed-offset-10-10 {margin-left: 100%;}
+
+.fixed-offset-1-24 {margin-left: 4.167%;}
+.fixed-offset-2-24 {margin-left: 8.333%;}
+.fixed-offset-3-24 {margin-left: 12.5%;}
+.fixed-offset-4-24 {margin-left: 16.667%;}
+.fixed-offset-5-24 {margin-left: 20.833%;}
+.fixed-offset-6-24 {margin-left: 25%;}
+.fixed-offset-7-24 {margin-left: 29.167%;}
+.fixed-offset-8-24 {margin-left: 33.333%;}
+.fixed-offset-9-24 {margin-left: 37.5%;}
+.fixed-offset-10-24 {margin-left: 41.667%;}
+.fixed-offset-11-24 {margin-left: 45.833%;}
+.fixed-offset-12-24 {margin-left: 50%;}
+.fixed-offset-13-24 {margin-left: 54.167%;}
+.fixed-offset-14-24 {margin-left: 58.333%;}
+.fixed-offset-15-24 {margin-left: 62.5%;}
+.fixed-offset-16-24 {margin-left: 66.667%;}
+.fixed-offset-17-24 {margin-left: 70.833%;}
+.fixed-offset-18-24 {margin-left: 75%;}
+.fixed-offset-19-24 {margin-left: 79.167%;}
+.fixed-offset-20-24 {margin-left: 83.333%;}
+.fixed-offset-21-24 {margin-left: 87.5%;}
+.fixed-offset-22-24 {margin-left: 91.667%;}
+.fixed-offset-23-24 {margin-left: 95.833%;}
+.fixed-offset-24-24 {margin-left: 100%;}
+
+// Columns in 10ths and 24ths for small screens
+.col-s-1-10 {width: 10%;}
+.col-s-2-10 {width: 20%;}
+.col-s-3-10 {width: 30%;}
+.col-s-4-10 {width: 40%;}
+.col-s-5-10 {width: 50%;}
+.col-s-6-10 {width: 60%;}
+.col-s-7-10 {width: 70%;}
+.col-s-8-10 {width: 80%;}
+.col-s-9-10 {width: 90%;}
+.col-s-10-10 {width: 100%;}
+
+.col-s-1-24 {width: 4.167%;}
+.col-s-2-24 {width: 8.333%;}
+.col-s-3-24 {width: 12.5%;}
+.col-s-4-24 {width: 16.667%;}
+.col-s-5-24 {width: 20.833%;}
+.col-s-6-24 {width: 25%;}
+.col-s-7-24 {width: 29.167%;}
+.col-s-8-24 {width: 33.333%;}
+.col-s-9-24 {width: 37.5%;}
+.col-s-10-24 {width: 41.667%;}
+.col-s-11-24 {width: 45.833%;}
+.col-s-12-24 {width: 50%;}
+.col-s-13-24 {width: 54.167%;}
+.col-s-14-24 {width: 58.333%;}
+.col-s-15-24 {width: 62.5%;}
+.col-s-16-24 {width: 66.667%;}
+.col-s-17-24 {width: 70.833%;}
+.col-s-18-24 {width: 75%;}
+.col-s-19-24 {width: 79.167%;}
+.col-s-20-24 {width: 83.333%;}
+.col-s-21-24 {width: 87.5%;}
+.col-s-22-24 {width: 91.667%;}
+.col-s-23-24 {width: 95.833%;}
+.col-s-24-24 {width: 100%;}
+    
+// Offsets in 10ths and 24hs for small screens
+.offset-s-1-10 {margin-left: 10%;}
+.offset-s-2-10 {margin-left: 20%;}
+.offset-s-3-10 {margin-left: 30%;}
+.offset-s-4-10 {margin-left: 40%;}
+.offset-s-5-10 {margin-left: 50%;}
+.offset-s-6-10 {margin-left: 60%;}
+.offset-s-7-10 {margin-left: 70%;}
+.offset-s-8-10 {margin-left: 80%;}
+.offset-s-9-10 {margin-left: 90%;}
+.offset-s-10-10 {margin-left: 100%;}
+
+.offset-s-1-24 {margin-left: 4.167%;}
+.offset-s-2-24 {margin-left: 8.333%;}
+.offset-s-3-24 {margin-left: 12.5%;}
+.offset-s-4-24 {margin-left: 16.667%;}
+.offset-s-5-24 {margin-left: 20.833%;}
+.offset-s-6-24 {margin-left: 25%;}
+.offset-s-7-24 {margin-left: 29.167%;}
+.offset-s-8-24 {margin-left: 33.333%;}
+.offset-s-9-24 {margin-left: 37.5%;}
+.offset-s-10-24 {margin-left: 41.667%;}
+.offset-s-11-24 {margin-left: 45.833%;}
+.offset-s-12-24 {margin-left: 50%;}
+.offset-s-13-24 {margin-left: 54.167%;}
+.offset-s-14-24 {margin-left: 58.333%;}
+.offset-s-15-24 {margin-left: 62.5%;}
+.offset-s-16-24 {margin-left: 66.667%;}
+.offset-s-17-24 {margin-left: 70.833%;}
+.offset-s-18-24 {margin-left: 75%;}
+.offset-s-19-24 {margin-left: 79.167%;}
+.offset-s-20-24 {margin-left: 83.333%;}
+.offset-s-21-24 {margin-left: 87.5%;}
+.offset-s-22-24 {margin-left: 91.667%;}
+.offset-s-23-24 {margin-left: 95.833%;}
+.offset-s-24-24 {margin-left: 100%;}
+
+// Columns in 10ths and 24ths for medium screens
+@media only screen and (min-width: $small) {
+.col-m-1-10 {width: 10%;}
+.col-m-2-10 {width: 20%;}
+.col-m-3-10 {width: 30%;}
+.col-m-4-10 {width: 40%;}
+.col-m-5-10 {width: 50%;}
+.col-m-6-10 {width: 60%;}
+.col-m-7-10 {width: 70%;}
+.col-m-8-10 {width: 80%;}
+.col-m-9-10 {width: 90%;}
+.col-m-10-10 {width: 100%;}
+
+.col-m-1-24 {width: 4.167%;}
+.col-m-2-24 {width: 8.333%;}
+.col-m-3-24 {width: 12.5%;}
+.col-m-4-24 {width: 16.667%;}
+.col-m-5-24 {width: 20.833%;}
+.col-m-6-24 {width: 25%;}
+.col-m-7-24 {width: 29.167%;}
+.col-m-8-24 {width: 33.333%;}
+.col-m-9-24 {width: 37.5%;}
+.col-m-10-24 {width: 41.667%;}
+.col-m-11-24 {width: 45.833%;}
+.col-m-12-24 {width: 50%;}
+.col-m-13-24 {width: 54.167%;}
+.col-m-14-24 {width: 58.333%;}
+.col-m-15-24 {width: 62.5%;}
+.col-m-16-24 {width: 66.667%;}
+.col-m-17-24 {width: 70.833%;}
+.col-m-18-24 {width: 75%;}
+.col-m-19-24 {width: 79.167%;}
+.col-m-20-24 {width: 83.333%;}
+.col-m-21-24 {width: 87.5%;}
+.col-m-22-24 {width: 91.667%;}
+.col-m-23-24 {width: 95.833%;}
+.col-m-24-24 {width: 100%;}
+    
+// Offsets in 10ths and 24hs for medium screens
+.offset-m-1-10 {margin-left: 10%;}
+.offset-m-2-10 {margin-left: 20%;}
+.offset-m-3-10 {margin-left: 30%;}
+.offset-m-4-10 {margin-left: 40%;}
+.offset-m-5-10 {margin-left: 50%;}
+.offset-m-6-10 {margin-left: 60%;}
+.offset-m-7-10 {margin-left: 70%;}
+.offset-m-8-10 {margin-left: 80%;}
+.offset-m-9-10 {margin-left: 90%;}
+.offset-m-10-10 {margin-left: 100%;}
+
+.offset-m-1-24 {margin-left: 4.167%;}
+.offset-m-2-24 {margin-left: 8.333%;}
+.offset-m-3-24 {margin-left: 12.5%;}
+.offset-m-4-24 {margin-left: 16.667%;}
+.offset-m-5-24 {margin-left: 20.833%;}
+.offset-m-6-24 {margin-left: 25%;}
+.offset-m-7-24 {margin-left: 29.167%;}
+.offset-m-8-24 {margin-left: 33.333%;}
+.offset-m-9-24 {margin-left: 37.5%;}
+.offset-m-10-24 {margin-left: 41.667%;}
+.offset-m-11-24 {margin-left: 45.833%;}
+.offset-m-12-24 {margin-left: 50%;}
+.offset-m-13-24 {margin-left: 54.167%;}
+.offset-m-14-24 {margin-left: 58.333%;}
+.offset-m-15-24 {margin-left: 62.5%;}
+.offset-m-16-24 {margin-left: 66.667%;}
+.offset-m-17-24 {margin-left: 70.833%;}
+.offset-m-18-24 {margin-left: 75%;}
+.offset-m-19-24 {margin-left: 79.167%;}
+.offset-m-20-24 {margin-left: 83.333%;}
+.offset-m-21-24 {margin-left: 87.5%;}
+.offset-m-22-24 {margin-left: 91.667%;}
+.offset-m-23-24 {margin-left: 95.833%;}
+.offset-m-24-24 {margin-left: 100%;}
+}
+
+//Columns in 10ths and 24ths for large screens
+@media only screen and (min-width: $medium) { //and (max-width: $large) {
+.col-l-1-10 {width: 10%;}
+.col-l-2-10 {width: 20%;}
+.col-l-3-10 {width: 30%;}
+.col-l-4-10 {width: 40%;}
+.col-l-5-10 {width: 50%;}
+.col-l-6-10 {width: 60%;}
+.col-l-7-10 {width: 70%;}
+.col-l-8-10 {width: 80%;}
+.col-l-9-10 {width: 90%;}
+.col-l-10-10 {width: 100%;}
+
+.col-l-1-24 {width: 4.167%;}
+.col-l-2-24 {width: 8.333%;}
+.col-l-3-24 {width: 12.5%;}
+.col-l-4-24 {width: 16.667%;}
+.col-l-5-24 {width: 20.833%;}
+.col-l-6-24 {width: 25%;}
+.col-l-7-24 {width: 29.167%;}
+.col-l-8-24 {width: 33.333%;}
+.col-l-9-24 {width: 37.5%;}
+.col-l-10-24 {width: 41.667%;}
+.col-l-11-24 {width: 45.833%;}
+.col-l-12-24 {width: 50%;}
+.col-l-13-24 {width: 54.167%;}
+.col-l-14-24 {width: 58.333%;}
+.col-l-15-24 {width: 62.5%;}
+.col-l-16-24 {width: 66.667%;}
+.col-l-17-24 {width: 70.833%;}
+.col-l-18-24 {width: 75%;}
+.col-l-19-24 {width: 79.167%;}
+.col-l-20-24 {width: 83.333%;}
+.col-l-21-24 {width: 87.5%;}
+.col-l-22-24 {width: 91.667%;}
+.col-l-23-24 {width: 95.833%;}
+.col-l-24-24 {width: 100%;}
+    
+// Offsets in 10ths and 24hs for large screens
+.offset-l-1-10 {margin-left: 10%;}
+.offset-l-2-10 {margin-left: 20%;}
+.offset-l-3-10 {margin-left: 30%;}
+.offset-l-4-10 {margin-left: 40%;}
+.offset-l-5-10 {margin-left: 50%;}
+.offset-l-6-10 {margin-left: 60%;}
+.offset-l-7-10 {margin-left: 70%;}
+.offset-l-8-10 {margin-left: 80%;}
+.offset-l-9-10 {margin-left: 90%;}
+.offset-l-10-10 {margin-left: 100%;}
+
+.offset-l-1-24 {margin-left: 4.167%;}
+.offset-l-2-24 {margin-left: 8.333%;}
+.offset-l-3-24 {margin-left: 12.5%;}
+.offset-l-4-24 {margin-left: 16.667%;}
+.offset-l-5-24 {margin-left: 20.833%;}
+.offset-l-6-24 {margin-left: 25%;}
+.offset-l-7-24 {margin-left: 29.167%;}
+.offset-l-8-24 {margin-left: 33.333%;}
+.offset-l-9-24 {margin-left: 37.5%;}
+.offset-l-10-24 {margin-left: 41.667%;}
+.offset-l-11-24 {margin-left: 45.833%;}
+.offset-l-12-24 {margin-left: 50%;}
+.offset-l-13-24 {margin-left: 54.167%;}
+.offset-l-14-24 {margin-left: 58.333%;}
+.offset-l-15-24 {margin-left: 62.5%;}
+.offset-l-16-24 {margin-left: 66.667%;}
+.offset-l-17-24 {margin-left: 70.833%;}
+.offset-l-18-24 {margin-left: 75%;}
+.offset-l-19-24 {margin-left: 79.167%;}
+.offset-l-20-24 {margin-left: 83.333%;}
+.offset-l-21-24 {margin-left: 87.5%;}
+.offset-l-22-24 {margin-left: 91.667%;}
+.offset-l-23-24 {margin-left: 95.833%;}
+.offset-l-24-24 {margin-left: 100%;}
+}
+
+//Columns in 10ths and 24ths for extra large screens
+@media only screen and (min-width: $large) {
+.col-xl-1-10 {width: 10%;}
+.col-xl-2-10 {width: 20%;}
+.col-xl-3-10 {width: 30%;}
+.col-xl-4-10 {width: 40%;}
+.col-xl-5-10 {width: 50%;}
+.col-xl-6-10 {width: 60%;}
+.col-xl-7-10 {width: 70%;}
+.col-xl-8-10 {width: 80%;}
+.col-xl-9-10 {width: 90%;}
+.col-xl-10-10 {width: 100%;}
+
+.col-xl-1-24 {width: 4.167%;}
+.col-xl-2-24 {width: 8.333%;}
+.col-xl-3-24 {width: 12.5%;}
+.col-xl-4-24 {width: 16.667%;}
+.col-xl-5-24 {width: 20.833%;}
+.col-xl-6-24 {width: 25%;}
+.col-xl-7-24 {width: 29.167%;}
+.col-xl-8-24 {width: 33.333%;}
+.col-xl-9-24 {width: 37.5%;}
+.col-xl-10-24 {width: 41.667%;}
+.col-xl-11-24 {width: 45.833%;}
+.col-xl-12-24 {width: 50%;}
+.col-xl-13-24 {width: 54.167%;}
+.col-xl-14-24 {width: 58.333%;}
+.col-xl-15-24 {width: 62.5%;}
+.col-xl-16-24 {width: 66.667%;}
+.col-xl-17-24 {width: 70.833%;}
+.col-xl-18-24 {width: 75%;}
+.col-xl-19-24 {width: 79.167%;}
+.col-xl-20-24 {width: 83.333%;}
+.col-xl-21-24 {width: 87.5%;}
+.col-xl-22-24 {width: 91.667%;}
+.col-xl-23-24 {width: 95.833%;}
+.col-xl-24-24 {width: 100%;}
+    
+// Offsets in 10ths and 24hs for extra large screens
+.offset-xl-1-10 {margin-left: 10%;}
+.offset-xl-2-10 {margin-left: 20%;}
+.offset-xl-3-10 {margin-left: 30%;}
+.offset-xl-4-10 {margin-left: 40%;}
+.offset-xl-5-10 {margin-left: 50%;}
+.offset-xl-6-10 {margin-left: 60%;}
+.offset-xl-7-10 {margin-left: 70%;}
+.offset-xl-8-10 {margin-left: 80%;}
+.offset-xl-9-10 {margin-left: 90%;}
+.offset-xl-10-10 {margin-left: 100%;}
+
+.offset-xl-1-24 {margin-left: 4.167%;}
+.offset-xl-2-24 {margin-left: 8.333%;}
+.offset-xl-3-24 {margin-left: 12.5%;}
+.offset-xl-4-24 {margin-left: 16.667%;}
+.offset-xl-5-24 {margin-left: 20.833%;}
+.offset-xl-6-24 {margin-left: 25%;}
+.offset-xl-7-24 {margin-left: 29.167%;}
+.offset-xl-8-24 {margin-left: 33.333%;}
+.offset-xl-9-24 {margin-left: 37.5%;}
+.offset-xl-10-24 {margin-left: 41.667%;}
+.offset-xl-11-24 {margin-left: 45.833%;}
+.offset-xl-12-24 {margin-left: 50%;}
+.offset-xl-13-24 {margin-left: 54.167%;}
+.offset-xl-14-24 {margin-left: 58.333%;}
+.offset-xl-15-24 {margin-left: 62.5%;}
+.offset-xl-16-24 {margin-left: 66.667%;}
+.offset-xl-17-24 {margin-left: 70.833%;}
+.offset-xl-18-24 {margin-left: 75%;}
+.offset-xl-19-24 {margin-left: 79.167%;}
+.offset-xl-20-24 {margin-left: 83.333%;}
+.offset-xl-21-24 {margin-left: 87.5%;}
+.offset-xl-22-24 {margin-left: 91.667%;}
+.offset-xl-23-24 {margin-left: 95.833%;}
+.offset-xl-24-24 {margin-left: 100%;}
+}
+
+@media only screen and (min-width: $large) {
+    .xl-only {display: block;}
+}
+@media only screen and (min-width: $medium) and (max-width: $large) {
+    .l-only {display: block;}
+}
+@media only screen and (min-width: $medium +0.01px) {
+    .l-up {display: block;}
+}
+@media only screen and (min-width: $small +0.01px) and (max-width: $medium) {
+    .m-only {display: block;}
+}
+@media only screen and (min-width: $small +0.01px) {
+    .m-up {display: block;}
+}
+@media only screen and (max-width: $small) {
+    .s-only {display: block;}
+}

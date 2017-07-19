@@ -1,0 +1,171 @@
+// Define typography and apply initial scaling so 16rem = 16px and so on
+html {
+    font-size: 62.5%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+    margin-bottom: 0;
+    color: $font-color;
+}
+
+h1 {
+    font-size: $h1-font-size;
+    font-weight: $h1-font-weight;
+    padding: $h1-padding;
+    line-height: $h1-line-height;
+    color: $h1-color;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    padding: $h2-padding;
+    line-height: $h2-line-height;
+}
+
+h3 {
+    font-size: $h3-font-size;
+    font-weight: $h3-font-weight;
+    padding: $h3-padding;
+}
+
+h4 {
+    font-size: $h4-font-size;
+    font-weight: $h4-font-weight;
+    padding: $h4-padding;
+    font-style: italic;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+    //font-weight: $h6-font-weight;
+    //font-family: $p-font-family;
+}
+
+p {
+    font-size: $p-font-size;
+    font-family: $p-font-family;
+    padding: $p-padding;
+    margin: $p-margin;
+}
+
+// Link styling
+a {
+	color: $a-color;
+	text-decoration: none;
+	&:hover,
+	&:active,
+	&:focus {
+		color: $a-hover-color;
+		text-decoration: underline;
+	}
+}
+
+// Ordered list
+ol {
+    margin-right: 4rem;
+}
+
+// Highlight
+mark {
+	background: $mark-background;
+	padding: $mark-padding;
+    margin: $mark-margin;
+    border-left: solid $accent-color 0.6rem;
+}
+
+mark.note {
+    background: $mark-background;
+	padding: $mark-padding;
+    margin: $mark-margin;
+    display: block;
+    border-left: solid $accent-color 0.6rem;
+}
+
+// Blockquote
+blockquote {
+	margin: bq-margin;
+	border-left: $bq-border;
+	padding: $bq-padding;
+	font-size: $bq-font-size;
+	cite: $bq-cite;
+}
+
+// Code block styling
+pre {
+	border: $pre-border;
+	border-radius: $border-radius;
+	background: $code-background;
+	padding: $pre-padding;
+	tab-size: $pre-tab-size;
+	color: $code-color;
+	font-family: $code-font-family;
+	font-size: $pre-font-size;
+	margin: $pre-margin;
+	code: $pre-code;
+}
+
+// Keyboard input
+kbd {
+	background-color: $kbd-background-color;
+	border: $kbd-border;
+	border-radius: $kbd-border-radius;
+	box-shadow: $kbd-box-shadow;
+	color: $kbd-color;
+	display: $kbd-display;
+	font-family: $kbd-font-family;
+	font-size: $kbd-font-size;
+	line-height: $kbd-line-height;
+	margin: $kbd-margin;
+	padding: $kbd-padding;
+	text-shadow: $kbd-text-shadow;
+}
+
+// Inline code styling
+:not(pre) > code {
+	color: $code-color;
+	background: $code-background;
+	font-family: $code-font-family;
+	padding: 0 0.2rem;
+	border: $borders;
+	border-radius: $border-radius;
+}
+
+// Line break
+hr {
+	height: hr-height;
+	border: hr-border;
+	border-top: $borders;
+}
+
+// Definition list
+dt {
+	font-weight: $dt-font-weight;
+}
+
+dd {
+	margin-bottom: $dd-margin;
+}
+
+.important-list {
+    font-size: 2.4rem;
+    font-style: italic;
+    color: $accent-color;
+}
+
+.important-list li span {
+    font-size: 2.2rem;
+    color: $font-color;
+}

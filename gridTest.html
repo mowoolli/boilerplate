@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>TEXT IN BROWSER TAB</title>
+        
+        <meta name="description" content="A description, up to 160 characters, that will show up on search engine results.">
+        
+        <link href='//fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+        <link rel="stylesheet" href="dist/css/main.css">
+    </head>
+    
+    <body>
+        <h6 class="banner"><font color="blue">h</font><font color="green">e</font><font color="orange">l</font><font color="orange">l</font><font color="black">o</font> <font color="black">w</font><font color="green">o</font><font color="orange">r</font><font color="green">l</font><font color="blue">d</font>.<font style="background-color: green" color="white">_</font></h6>
+        
+        <div class="medium-container"><h1>Test of grid and other components</h1></div>
+        
+        <ul><li>hallo</li></ul>
+        
+        <div class="row" style="font-size 1.6rem">
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 offset-l-8-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+            <div class="col-xl-3-24 col-l-4-24 col-m-6-24" style="border: 1px solid black">xl=1/8; l=1/6; m=1/4; s=1</div>
+        </div>
+        
+        <p>Okay, that seems to work pretty well. Now for some more realistic content:</p>
+        <div class="row" style="font-size: 1.6rem">
+            <div class="col-xl-6-24 col-l-8-24 col-m-8-24">Some menu content</div>
+            <div class="col-xl-12-24 col-l-8-24 col-m-16-24">Some more lengthy content. Perhaps a description of a city. Like Ann Arbor! A pretty great college town. You've got all the seasons, tons of sports, bike-friendly culture and infrastructure, driving disance to a mojar city with all that it has to offer, etc.</div>
+            <div class="col-xl-6-24 col-l-8-24 col-m-24-24">Some other content. Maybe a different menu or something.</div>
+        </div>
+        
+        <p>Below are static/rigid/fixed columns and offsets:</p>
+        <div class="row">
+            <div class="fixed-col-1-24" style="font-size: 1.6rem">1</div>
+            <div class="fixed-col-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-2-24" style="font-size: 1.6rem">2</div>
+            <div class="fixed-col-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+            <div class="fixed-col-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-3-24" style="font-size: 1.6rem">3</div>
+            <div class="fixed-col-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-4-24" style="font-size: 1.6rem">4</div>
+            <div class="fixed-col-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+            <div class="fixed-col-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-5-24" style="font-size: 1.6rem">5</div>
+            <div class="fixed-col-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-6-24" style="font-size: 1.6rem">6</div>
+            <div class="fixed-col-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-7-24" style="font-size: 1.6rem">7</div>
+            <div class="fixed-col-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+            <div class="fixed-col-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-8-24" style="font-size: 1.6rem">8</div>
+            <div class="fixed-col-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-9-24" style="font-size: 1.6rem">9</div>
+            <div class="fixed-col-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+            <div class="fixed-col-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-10-24" style="font-size: 1.6rem">10</div>
+            <div class="fixed-col-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-11-24" style="font-size: 1.6rem">11</div>
+            <div class="fixed-col-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-12-24" style="font-size: 1.6rem">12</div>
+            <div class="fixed-col-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+            <div class="fixed-col-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-13-24" style="font-size: 1.6rem">13</div>
+            <div class="fixed-col-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-14-24" style="font-size: 1.6rem">14</div>
+            <div class="fixed-col-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+            <div class="fixed-col-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-15-24" style="font-size: 1.6rem">15</div>
+            <div class="fixed-col-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-16-24" style="font-size: 1.6rem">16</div>
+            <div class="fixed-col-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+            <div class="fixed-col-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-17-24" style="font-size: 1.6rem">17</div>
+            <div class="fixed-col-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-18-24" style="font-size: 1.6rem">18</div>
+            <div class="fixed-col-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-19-24" style="font-size: 1.6rem">19</div>
+            <div class="fixed-col-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+            <div class="fixed-col-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-20-24" style="font-size: 1.6rem">20</div>
+            <div class="fixed-col-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-21-24" style="font-size: 1.6rem">21</div>
+            <div class="fixed-col-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+            <div class="fixed-col-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-22-24" style="font-size: 1.6rem">22</div>
+            <div class="fixed-col-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="fixed-col-23-24" style="font-size: 1.6rem">23</div>
+            <div class="fixed-col-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <div class="row">
+            <div class="fixed-offset-1-24 fixed-col-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-2-24 fixed-col-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-1-10 fixed-col-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-3-24 fixed-col-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-4-24 fixed-col-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-2-10 fixed-col-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-5-24 fixed-col-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-6-24 fixed-col-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-7-24 fixed-col-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-3-10 fixed-col-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-8-24 fixed-col-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-9-24 fixed-col-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-4-10 fixed-col-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-10-24 fixed-col-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-11-24 fixed-col-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-12-24 fixed-col-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-5-10 fixed-col-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-13-24 fixed-col-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-14-24 fixed-col-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-6-10 fixed-col-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-15-24 fixed-col-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-16-24 fixed-col-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-7-10 fixed-col-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-17-24 fixed-col-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-18-24 fixed-col-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-19-24 fixed-col-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-8-10 fixed-col-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-20-24 fixed-col-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-21-24 fixed-col-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-9-10 fixed-col-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-22-24 fixed-col-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="fixed-offset-23-24 fixed-col-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <p>Below are dynamic/responsive/flexible columns and offsets. For medium screen breakpoints:</p>
+        <div class="row">
+            <div class="col-m-1-24" style="font-size: 1.6rem">1</div>
+            <div class="col-m-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="col-m-2-24" style="font-size: 1.6rem">2</div>
+            <div class="col-m-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="col-m-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+            <div class="col-m-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="col-m-3-24" style="font-size: 1.6rem">3</div>
+            <div class="col-m-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="col-m-4-24" style="font-size: 1.6rem">4</div>
+            <div class="col-m-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="col-m-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+            <div class="col-m-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="col-m-5-24" style="font-size: 1.6rem">5</div>
+            <div class="col-m-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="col-m-6-24" style="font-size: 1.6rem">6</div>
+            <div class="col-m-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="col-m-7-24" style="font-size: 1.6rem">7</div>
+            <div class="col-m-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="col-m-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+            <div class="col-m-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="col-m-8-24" style="font-size: 1.6rem">8</div>
+            <div class="col-m-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="col-m-9-24" style="font-size: 1.6rem">9</div>
+            <div class="col-m-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="col-m-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+            <div class="col-m-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="col-m-10-24" style="font-size: 1.6rem">10</div>
+            <div class="col-m-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="col-m-11-24" style="font-size: 1.6rem">11</div>
+            <div class="col-m-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="col-m-12-24" style="font-size: 1.6rem">12</div>
+            <div class="col-m-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="col-m-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+            <div class="col-m-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="col-m-13-24" style="font-size: 1.6rem">13</div>
+            <div class="col-m-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="col-m-14-24" style="font-size: 1.6rem">14</div>
+            <div class="col-m-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="col-m-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+            <div class="col-m-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-m-15-24" style="font-size: 1.6rem">15</div>
+            <div class="col-m-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="col-m-16-24" style="font-size: 1.6rem">16</div>
+            <div class="col-m-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="col-m-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+            <div class="col-m-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="col-m-17-24" style="font-size: 1.6rem">17</div>
+            <div class="col-m-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="col-m-18-24" style="font-size: 1.6rem">18</div>
+            <div class="col-m-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="col-m-19-24" style="font-size: 1.6rem">19</div>
+            <div class="col-m-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="col-m-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+            <div class="col-m-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="col-m-20-24" style="font-size: 1.6rem">20</div>
+            <div class="col-m-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="col-m-21-24" style="font-size: 1.6rem">21</div>
+            <div class="col-m-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="col-m-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+            <div class="col-m-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="col-m-22-24" style="font-size: 1.6rem">22</div>
+            <div class="col-m-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="col-m-23-24" style="font-size: 1.6rem">23</div>
+            <div class="col-m-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <div class="row">
+            <div class="offset-m-1-24 col-m-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-2-24 col-m-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-1-10 col-m-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-3-24 col-m-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-4-24 col-m-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-2-10 col-m-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-5-24 col-m-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-6-24 col-m-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-7-24 col-m-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-3-10 col-m-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-8-24 col-m-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-9-24 col-m-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-4-10 col-m-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-10-24 col-m-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-11-24 col-m-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-12-24 col-m-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-5-10 col-m-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-13-24 col-m-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-14-24 col-m-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-6-10 col-m-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-15-24 col-m-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-16-24 col-m-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-7-10 col-m-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-17-24 col-m-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-18-24 col-m-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-19-24 col-m-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-8-10 col-m-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-20-24 col-m-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-21-24 col-m-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-9-10 col-m-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-22-24 col-m-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-m-23-24 col-m-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <p>Below are dynamic/responsive/flexible columns and offsets. For large screen breakpoints:</p>
+        <div class="row">
+            <div class="col-l-1-24" style="font-size: 1.6rem">1</div>
+            <div class="col-l-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="col-l-2-24" style="font-size: 1.6rem">2</div>
+            <div class="col-l-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="col-l-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+            <div class="col-l-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="col-l-3-24" style="font-size: 1.6rem">3</div>
+            <div class="col-l-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="col-l-4-24" style="font-size: 1.6rem">4</div>
+            <div class="col-l-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="col-l-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+            <div class="col-l-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="col-l-5-24" style="font-size: 1.6rem">5</div>
+            <div class="col-l-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="col-l-6-24" style="font-size: 1.6rem">6</div>
+            <div class="col-l-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="col-l-7-24" style="font-size: 1.6rem">7</div>
+            <div class="col-l-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="col-l-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+            <div class="col-l-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="col-l-8-24" style="font-size: 1.6rem">8</div>
+            <div class="col-l-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="col-l-9-24" style="font-size: 1.6rem">9</div>
+            <div class="col-l-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="col-l-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+            <div class="col-l-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="col-l-10-24" style="font-size: 1.6rem">10</div>
+            <div class="col-l-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="col-l-11-24" style="font-size: 1.6rem">11</div>
+            <div class="col-l-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="col-l-12-24" style="font-size: 1.6rem">12</div>
+            <div class="col-l-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="col-l-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+            <div class="col-l-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="col-l-13-24" style="font-size: 1.6rem">13</div>
+            <div class="col-l-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="col-l-14-24" style="font-size: 1.6rem">14</div>
+            <div class="col-l-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="col-l-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+            <div class="col-l-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-l-15-24" style="font-size: 1.6rem">15</div>
+            <div class="col-l-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="col-l-16-24" style="font-size: 1.6rem">16</div>
+            <div class="col-l-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="col-l-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+            <div class="col-l-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="col-l-17-24" style="font-size: 1.6rem">17</div>
+            <div class="col-l-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="col-l-18-24" style="font-size: 1.6rem">18</div>
+            <div class="col-l-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="col-l-19-24" style="font-size: 1.6rem">19</div>
+            <div class="col-l-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="col-l-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+            <div class="col-l-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="col-l-20-24" style="font-size: 1.6rem">20</div>
+            <div class="col-l-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="col-l-21-24" style="font-size: 1.6rem">21</div>
+            <div class="col-l-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="col-l-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+            <div class="col-l-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="col-l-22-24" style="font-size: 1.6rem">22</div>
+            <div class="col-l-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="col-l-23-24" style="font-size: 1.6rem">23</div>
+            <div class="col-l-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <div class="row">
+            <div class="offset-l-1-24 col-l-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-2-24 col-l-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-1-10 col-l-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-3-24 col-l-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-4-24 col-l-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-2-10 col-l-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-5-24 col-l-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-6-24 col-l-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-7-24 col-l-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-3-10 col-l-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-8-24 col-l-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-9-24 col-l-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-4-10 col-l-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-10-24 col-l-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-11-24 col-l-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-12-24 col-l-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-5-10 col-l-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-13-24 col-l-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-14-24 col-l-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-6-10 col-l-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-15-24 col-l-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-16-24 col-l-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-7-10 col-l-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-17-24 col-l-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-18-24 col-l-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-19-24 col-l-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-8-10 col-l-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-20-24 col-l-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-21-24 col-l-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-9-10 col-l-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-22-24 col-l-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-l-23-24 col-l-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <p>Below are dynamic/responsive/flexible columns and offsets. For extra large screen breakpoints:</p>
+        <div class="row">
+            <div class="col-xl-1-24" style="font-size: 1.6rem">1</div>
+            <div class="col-xl-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2-24" style="font-size: 1.6rem">2</div>
+            <div class="col-xl-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+            <div class="col-xl-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3-24" style="font-size: 1.6rem">3</div>
+            <div class="col-xl-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4-24" style="font-size: 1.6rem">4</div>
+            <div class="col-xl-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+            <div class="col-xl-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5-24" style="font-size: 1.6rem">5</div>
+            <div class="col-xl-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6-24" style="font-size: 1.6rem">6</div>
+            <div class="col-xl-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-7-24" style="font-size: 1.6rem">7</div>
+            <div class="col-xl-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+            <div class="col-xl-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8-24" style="font-size: 1.6rem">8</div>
+            <div class="col-xl-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9-24" style="font-size: 1.6rem">9</div>
+            <div class="col-xl-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+            <div class="col-xl-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-10-24" style="font-size: 1.6rem">10</div>
+            <div class="col-xl-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-11-24" style="font-size: 1.6rem">11</div>
+            <div class="col-xl-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12-24" style="font-size: 1.6rem">12</div>
+            <div class="col-xl-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+            <div class="col-xl-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-13-24" style="font-size: 1.6rem">13</div>
+            <div class="col-xl-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-14-24" style="font-size: 1.6rem">14</div>
+            <div class="col-xl-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+            <div class="col-xl-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-15-24" style="font-size: 1.6rem">15</div>
+            <div class="col-xl-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-16-24" style="font-size: 1.6rem">16</div>
+            <div class="col-xl-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+            <div class="col-xl-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-17-24" style="font-size: 1.6rem">17</div>
+            <div class="col-xl-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-18-24" style="font-size: 1.6rem">18</div>
+            <div class="col-xl-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-19-24" style="font-size: 1.6rem">19</div>
+            <div class="col-xl-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+            <div class="col-xl-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-20-24" style="font-size: 1.6rem">20</div>
+            <div class="col-xl-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-21-24" style="font-size: 1.6rem">21</div>
+            <div class="col-xl-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+            <div class="col-xl-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-22-24" style="font-size: 1.6rem">22</div>
+            <div class="col-xl-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-23-24" style="font-size: 1.6rem">23</div>
+            <div class="col-xl-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+        
+        <div class="row">
+            <div class="offset-xl-1-24 col-xl-23-24" style="font-size: 1.6rem">23</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-2-24 col-xl-22-24" style="font-size: 1.6rem">22</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-1-10 col-xl-9-10" style="font-size: 1.6rem; border: 1px solid blue">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-3-24 col-xl-21-24" style="font-size: 1.6rem">21</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-4-24 col-xl-20-24" style="font-size: 1.6rem">20</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-2-10 col-xl-8-10" style="font-size: 1.6rem; border: 1px solid blue">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-5-24 col-xl-19-24" style="font-size: 1.6rem">19</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-6-24 col-xl-18-24" style="font-size: 1.6rem">18</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-7-24 col-xl-17-24" style="font-size: 1.6rem">17</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-3-10 col-xl-7-10" style="font-size: 1.6rem; border: 1px solid blue">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-8-24 col-xl-16-24" style="font-size: 1.6rem">16</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-9-24 col-xl-15-24" style="font-size: 1.6rem">15</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-4-10 col-xl-6-10" style="font-size: 1.6rem; border: 1px solid blue">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-10-24 col-xl-14-24" style="font-size: 1.6rem">14</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-11-24 col-xl-13-24" style="font-size: 1.6rem">13</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-12-24 col-xl-12-24" style="font-size: 1.6rem">12</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-5-10 col-xl-5-10" style="font-size: 1.6rem; border: 1px solid blue">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-13-24 col-xl-11-24" style="font-size: 1.6rem">11</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-14-24 col-xl-10-24" style="font-size: 1.6rem">10</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-6-10 col-xl-4-10" style="font-size: 1.6rem; border: 1px solid blue">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-15-24 col-xl-9-24" style="font-size: 1.6rem">9</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-16-24 col-xl-8-24" style="font-size: 1.6rem">8</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-7-10 col-xl-3-10" style="font-size: 1.6rem; border: 1px solid blue">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-17-24 col-xl-7-24" style="font-size: 1.6rem">7</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-18-24 col-xl-6-24" style="font-size: 1.6rem">6</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-19-24 col-xl-5-24" style="font-size: 1.6rem">5</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-8-10 col-xl-2-10" style="font-size: 1.6rem; border: 1px solid blue">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-20-24 col-xl-4-24" style="font-size: 1.6rem">4</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-21-24 col-xl-3-24" style="font-size: 1.6rem">3</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-9-10 col-xl-1-10" style="font-size: 1.6rem; border: 1px solid blue">1</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-22-24 col-xl-2-24" style="font-size: 1.6rem">2</div>
+        </div>
+        <div class="row">
+            <div class="offset-xl-23-24 col-xl-1-24" style="font-size: 1.6rem">1</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+table.cpu-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: $primary-color solid 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+table.cpu-table th {
+    color: white;
+    background-color: $accent-color;
+}
+
+table.cpu-table th, table.cpu-table td {
+    text-align: left;
+    padding: 1rem;
+}
+
+table.cpu-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}

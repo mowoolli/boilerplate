@@ -1,0 +1,286 @@
+// Footer
+
+//wrapper and push classes force footer to bottom on short pages
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -1*$small-footer-height; /* the bottom margin is the negative value of the footer's height */
+}
+
+.push {
+    height: $small-footer-height; // mobile first
+}
+
+@media only screen and (min-width: $small +0.01px) and (max-width: $medium) {
+    .wrapper {margin: 0 auto -1*$medium-footer-height;}
+    .push {height: $medium-footer-height;}
+}
+@media only screen and (min-width: $medium +0.01px) {
+    .wrapper {margin: 0 auto -1*$large-footer-height;}
+    .push {height: $large-footer-height;}
+}
+
+[class*="footer-"] {
+    font-family: $footer-font-family;
+    font-size: $footer-font-size;
+    background-color: $footer-background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-s {
+    height: $small-footer-height;
+}
+
+.footer-m {
+    height: $medium-footer-height;
+}
+
+.footer-l-up {
+    height: $large-footer-height;
+}
+
+#logo {
+    text-align: center;
+    color: $footer-link-color;
+}
+
+#logo::after {
+    color: $footer-link-color;
+    content: " \00a9  MOW";
+}
+
+table[class*="footernav-"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table.footernav-s {
+    height: 60%;
+}
+
+table.footernav-m {
+    height: 100%;
+}
+
+table.footernav-l-up {
+    text-align: center;
+    height: 50%;
+}
+
+table.footernav-s td, table.footernav-m td {
+    //padding: 0 0 0 20%;
+    width: 50%;
+}
+
+table.footernav-l-up td {
+    //padding: 0 0 0 20%;
+    width: 16%;
+}
+
+table[class*="footernav-"] tr td a {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+table[class*="footernav-"] tr td a.active {
+    background-color: $footer-active-background-color;
+}
+
+table.footernav-s tr td a {
+    padding: 0.6rem 0rem 0rem 1rem;
+}
+
+table.footernav-s tr td:first-child a {
+    padding: 0.6rem 0rem 0rem 4rem;
+}
+
+table.footernav-m tr td a {
+    padding: 0.2rem 0rem 0rem 2rem;
+}
+
+table.footernav-m tr td:first-child a {
+    padding: 0.2rem 0rem 0rem 4rem;
+}
+
+#publications:hover a:not(.active), #tools:hover a:not(.active), #education:hover a:not(.active), #research:hover a:not(.active), #internships:hover a:not(.active), #curriculum:hover a:not(.active) {
+    background-color: $footer-hover-background-color;
+}
+
+table[class*="footer-contact-"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+table.footer-contact-s {
+    height: 40%;
+}
+
+table.footer-contact-m {
+    height: 100%;
+}
+
+table.footer-contact-l-up {
+    height: 50%;
+}
+
+table.footer-contact-s td {
+    width: 33.33%;
+}
+
+table.footer-contact-m td {
+    width: 50%;
+}
+
+table.footer-contact-l-up td {
+    width: 16.66%;
+}
+
+table.footer-contact-s tr td a, table.footer-contact-m tr td a, table.footer-contact-l-up tr td a {
+    padding: 0rem 0rem 0rem 0rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+#text {
+    display: none;
+}
+
+#icon {
+    display: inline-block;
+}
+
+table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-contact-l-up tr td i {
+    font-size: 1.6rem;
+    color: black;
+    padding: 0rem 0rem 0rem 0rem;
+    width: 100%;
+    text-align: center;
+}
+
+#email {
+    background-color: $accent-color;
+}
+#email:hover #icon {
+    display: none;
+}
+#email:hover #text {
+    display: inline-block;
+}
+#email:hover, #email:hover a {
+    //visibility: visible;
+    //display: inline-block;
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#email-active a {
+    display: inline-block;
+    visibility: visible;
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#linkedin {
+    background-color: #0077B5;
+}
+#linkedin:hover #icon {
+    display: none;
+}
+#linkedin:hover #text {
+    display: inline-block;
+}
+#linkedin:hover, #linkedin:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#github {
+    background-color: #f5f5f5;
+    //background-color: #333;
+}
+#github:hover #icon {
+    display: none;
+}
+#github:hover #text {
+    display: inline-block;
+}
+#github:hover, #github:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#instagram {
+    background-color: #833ab4;
+    //background-color: #c13584;
+    //background-color: #e1306c;
+}
+#instagram:hover #icon {
+    display: none;
+}
+#instagram:hover #text {
+    display: inline-block;
+}
+#instagram:hover, #instagram:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#strava {
+    background-color: #fc4c02;
+}
+#strava:hover #icon {
+    display: none;
+}
+#strava:hover #text {
+    display: inline-block;
+}
+#strava:hover, #strava:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#rss {
+    background-color: #f26522;
+}
+#rss:hover #icon {
+    display: none;
+}
+#rss:hover #text {
+    display: inline-block;
+}
+#rss:hover, #rss:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}
+
+#google {
+    background-color: #34a853;
+}
+#google:hover #icon {
+    display: none;
+}
+#google:hover #text {
+    display: inline-block;
+}
+#google:hover, #google:hover a {
+    background-color: $primary-color;
+    color: $footer-link-color;
+    text-decoration: none;
+}

@@ -1,0 +1,34 @@
+// Setup the page for a responsive experience
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    height: 100%;
+}
+
+// Vertically center anything
+.vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Remove margin from body
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+// Rotate 90 degrees
+.rotate {
+    transform:rotate(-90deg);
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      -webkit-transform: rotate(-90deg); /* Safari and Chrome */
+}

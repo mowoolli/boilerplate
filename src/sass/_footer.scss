@@ -156,7 +156,9 @@ table.footer-contact-s tr td a, table.footer-contact-m tr td a, table.footer-con
 }
 
 #icon {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-contact-l-up tr td i {
@@ -174,18 +176,20 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #email:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #email:hover, #email:hover a {
-    //visibility: visible;
-    //display: inline-block;
     background-color: $primary-color;
     color: $footer-link-color;
     text-decoration: none;
 }
 
 #email-active a {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     visibility: visible;
     background-color: $primary-color;
     color: $footer-link-color;
@@ -199,7 +203,9 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #linkedin:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #linkedin:hover, #linkedin:hover a {
     background-color: $primary-color;
@@ -215,7 +221,9 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #github:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #github:hover, #github:hover a {
     background-color: $primary-color;
@@ -247,7 +255,9 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #strava:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #strava:hover, #strava:hover a {
     background-color: $primary-color;
@@ -262,7 +272,9 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #rss:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #rss:hover, #rss:hover a {
     background-color: $primary-color;
@@ -277,7 +289,9 @@ table.footer-contact-s tr td i, table.footer-contact-m tr td i, table.footer-con
     display: none;
 }
 #google:hover #text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 #google:hover, #google:hover a {
     background-color: $primary-color;
